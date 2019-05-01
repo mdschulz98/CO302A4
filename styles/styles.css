@@ -8,12 +8,15 @@ body, html {
     margin-bottom:50px;
     font: 1em "Oswald", sans-serif;
   }
+
+  .title_block a:visited {
+    color: #8DB9ED;
+  }
   
   .parallax {
     /* The image used */
     background-image: url('../assets/netsec1.png');
   
-    /* Full height */
     height: 50%; 
   
     /* Create the parallax scrolling effect */
