@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  span.btt p {
+    color:#8DB9ED;
+    margin-bottom:50px;
+    font: 1em "Oswald", sans-serif;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('../assets/netsec1.png');
+  
+    /* Full height */
+    height: 50%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    opacity: 0.65;
+  }
+
+  .text_block {
+    height: auto;
+    color: #515b63;
+    ;text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+  }
+
+  .title_block {
+    text-align: center;
+  }
+
+  .title_block, .text_block {
+    background-color: #8DB9ED;
+    font-size: 24px;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  
