@@ -8,11 +8,8 @@ function topFunction() {
 }
 
 function linkclicked(id) {
-    alert(id);
     var cookie = "choice=" + id.toString();
     document.cookie = cookie;
-    alert(document.cookie);
-    alert(cookie);
 }
 
 function getChoice() {
