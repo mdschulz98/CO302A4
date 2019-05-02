@@ -10,7 +10,7 @@ body, html {
   }
 
   .title_block a:visited {
-    color: #8DB9ED;
+    color: #515b63;
   }
   
   .parallax {
@@ -31,7 +31,6 @@ body, html {
 
   .text_block {
     height: auto;
-    color: #515b63;
     ;text-align:center;
     padding:50px 80px;
     text-align: justify;
@@ -44,6 +43,7 @@ body, html {
   .title_block, .text_block {
     background-color: #8DB9ED;
     font-size: 24px;
+    color: #515b63;
   }
 
   .caption {
