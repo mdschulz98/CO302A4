@@ -5,4 +5,32 @@ function adjustHeight() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function linkclicked(id) {
+    alert(id);
+    var cookie = "choice=" + id.toString();
+    document.cookie = cookie;
+    alert(document.cookie);
+    alert(cookie);
+}
+
+function getChoice() {
+    var name = "choice=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        prependById('prev_choice_story',"You picked option: " + c.substring(name.length, c.length) + "\n")
+      }
+    }
+    prependById('prev_choice_story', "I have no idea what you picked\n");
+  }
+
+  function prependById(elementId, textToPrepend) {
+    document.getElementById(elementId).innerHTML = textToPrepend + document.getElementById(elementId).innerHTML;
   }
