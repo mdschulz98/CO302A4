@@ -27,8 +27,10 @@ function getChoice() {
       if (c.indexOf(name) == 0) {
         prependById('prev_choice_story',"You picked option: " + c.substring(name.length, c.length) + "\n")
       }
+      else {
+        prependById('prev_choice_story', "I have no idea what you picked\n");
+      }
     }
-    prependById('prev_choice_story', "I have no idea what you picked\n");
   }
 
   function prependById(elementId, textToPrepend) {
