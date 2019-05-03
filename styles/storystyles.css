@@ -69,5 +69,6 @@
 
     .choice_text {
       clear: left;
+      text-align: center;
     }
   }
