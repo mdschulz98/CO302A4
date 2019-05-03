@@ -3,6 +3,11 @@ body, html {
     margin: 0;
   }
 
+  .more_reading a, .more_reading a:visited{
+    color: #515b63;
+    text-decoration: underline;
+  }
+
   span.btt p {
     color:#8DB9ED;
     margin-bottom:50px;
@@ -62,6 +67,17 @@ body, html {
     background-image: url('../assets/netsec1.png');
     height: 100%; 
     opacity: 0.75;
+  }
+
+  .column {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   
   .parallax {

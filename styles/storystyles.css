@@ -58,7 +58,7 @@
     border-radius: 50%;
   }
 
-  a:visited {
+  a, a:visited {
     color: #8DB9ED;
   }
   
