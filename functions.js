@@ -22,7 +22,7 @@ function getChoice() {
         c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-        prependById('prev_choice_story',choiceToText((c.substring(name.length, c.length)));
+        prependById('prev_choice_story',choiceToText((c.substring(name.length, c.length))));
       }
       else {
         prependById('prev_choice_story', "I have no idea what you picked.");
