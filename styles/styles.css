@@ -9,8 +9,59 @@ body, html {
     font: 1em "Oswald", sans-serif;
   }
 
-  .title_block a:visited {
+  .title_block a:visited, .title_block a, .center_block a:visited, .center_block a {
     color: #515b63;
+  }
+
+  .center_block {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .author_landing {
+    font-size: 26px;
+  }
+
+  .reason_landing {
+    font-size: 18px;
+  }
+
+  .small_open_text {
+    font-size: 10px;
+    color: #0014cc;
+  }
+
+  .entrance_button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    margin: 4px 2px;
+    padding: 20px;
+    border: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #515b63;
+  }
+
+  .entrance_button:hover {
+    background-color: #515b63;
+    color: white;
+  }
+
+  .netsec_bg {
+    background-image: url('../assets/netsec1.png');
+    height: 100%; 
+    opacity: 0.75;
   }
   
   .parallax {
@@ -26,7 +77,7 @@ body, html {
     background-size: cover;
 
     position: relative;
-    opacity: 0.65;
+    opacity: 0.75;
   }
 
   .text_block {
@@ -41,8 +92,11 @@ body, html {
   }
 
   .title_block, .text_block {
-    background-color: #8DB9ED;
     font-size: 24px;
+  }
+
+  .title_block, .text_block, .center_block {
+    background-color: #8DB9ED;
     color: #515b63;
   }
 

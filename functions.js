@@ -1,6 +1,5 @@
 function adjustHeight() {
     document.getElementById('story_text').style.height = document.defaultView.getComputedStyle(document.getElementById('option1'), "").getPropertyValue("height");
-    document.getElementById('option1').style.height = document.getElementById('story_text') - 1;
 }
 
 function topFunction() {
@@ -23,7 +22,7 @@ function getChoice() {
         c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-        prependById('prev_choice_story',"You picked option: " + c.substring(name.length, c.length) + "\n")
+        prependById('prev_choice_story',choiceToText(c.substring(name.length, c.length)));
       }
       else {
         prependById('prev_choice_story', "I have no idea what you picked.\n");
@@ -31,6 +30,23 @@ function getChoice() {
     }
   }
 
+  function choiceToText(choice) {
+    switch(choice) {
+      case 1: return "You picked Jonathan Decker, a wonderful choice!";
+      case 2: return "Why on earth would you pick Timothy? One course on blockchain a security master does not make.";
+      case 3: return "You picked Frank Stowalstalk, hoping that years of experience really make the difference.";
+      default: return "Congrats on breaking my webtext!";
+    }
+  }
+
   function prependById(elementId, textToPrepend) {
     document.getElementById(elementId).innerHTML = textToPrepend + document.getElementById(elementId).innerHTML;
   }
+
+function enterListen() {
+  document.addEventListener("keyup", function(e) {
+    if(e.keyCode === 13) {
+      document.getElementById("entrance_button").click();
+    }
+  });
+}
