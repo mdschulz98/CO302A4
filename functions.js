@@ -1,5 +1,6 @@
 function adjustHeight() {
     document.getElementById('story_text').style.height = document.defaultView.getComputedStyle(document.getElementById('option1'), "").getPropertyValue("height");
+    document.getElementById('option1').style.height = document.getElementById('story_text') - 1;
 }
 
 function topFunction() {
@@ -25,7 +26,7 @@ function getChoice() {
         prependById('prev_choice_story',"You picked option: " + c.substring(name.length, c.length) + "\n")
       }
       else {
-        prependById('prev_choice_story', "I have no idea what you picked\n");
+        prependById('prev_choice_story', "I have no idea what you picked.\n");
       }
     }
   }
