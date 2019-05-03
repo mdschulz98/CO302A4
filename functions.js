@@ -40,7 +40,7 @@ function getChoice() {
   }
 
   function prependById(elementId, textToPrepend) {
-    document.getElementById(elementId).innerHTML = textToPrepend + document.getElementById(elementId).innerHTML;
+    document.getElementById(elementId).innerHTML = textToPrepend + " " + document.getElementById(elementId).innerHTML;
   }
 
 function enterListen() {
