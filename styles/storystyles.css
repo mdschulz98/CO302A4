@@ -15,10 +15,12 @@
 
   p.choice_text {
     text-align: right;
+    font: 2em "Oswald", sans-serif;
   }
 
-  footer {
-    color: #4271f4
+  .story_head {
+    font-family: 'Lato', sans-serif;
+    color: #515b63
   }
 
   /* Create two equal columns that floats next to each other */
