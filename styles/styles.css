@@ -14,6 +14,10 @@ body, html {
     font: 1em "Oswald", sans-serif;
   }
 
+  .btt:hover {
+    cursor: pointer;
+  }
+
   .title_block a:visited, .title_block a, .center_block a:visited, .center_block a {
     color: #515b63;
   }
