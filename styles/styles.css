@@ -115,9 +115,14 @@ body, html {
     font-size: 24px;
   }
 
-  .title_block, .text_block, .center_block {
+  .title_block, .text_block {
     background-color: #8DB9ED;
     color: #515b63;
+  }
+
+  .center_block {
+    background-color: #8DB9ED;
+    color: #212833;
   }
 
   .caption {
