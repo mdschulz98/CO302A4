@@ -120,7 +120,7 @@ body, html {
     color: #515b63;
   }
 
-  .center_block {
+  .center_block, .center_block p a {
     background-color: #8DB9ED;
     color: #212833;
   }
