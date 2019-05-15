@@ -37,10 +37,12 @@
 
   .left, .right {
     width: 25%;
+    background-color:#507caf;
   }
 
   .middle {
     width: 50%;
+    background-color:#8DB9ED;
   }
 
   .column_1, .column_2 {
@@ -51,7 +53,7 @@
     background-color:#8DB9ED;
   }
 
-  .story_column p {
+  .story_column p, .column p {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #424749;
   }
