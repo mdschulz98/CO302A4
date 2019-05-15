@@ -31,6 +31,18 @@
     padding: 10px;
   }
 
+  .column {
+    float: left;
+  }
+
+  .left, .right {
+    width: 25%;
+  }
+
+  .middle {
+    width: 50%;
+  }
+
   .column_1, .column_2 {
     background-color:#507caf;
   }
