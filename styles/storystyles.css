@@ -31,6 +31,12 @@
     padding: 10px;
   }
 
+  .netsec_bg {
+    background-image: url('../assets/netsec1.png');
+    height: 100%; 
+    opacity: 0.75;
+  }
+
   .column {
     float: left;
     padding: 10px;
