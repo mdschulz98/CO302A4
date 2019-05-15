@@ -16,7 +16,7 @@
   p.choice_text {
     text-align: center;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: #233a44;
+    color: #212833;
   }
 
   .story_head {
@@ -34,7 +34,6 @@
   .column {
     float: left;
     padding: 10px;
-    height: auto;
   }
 
   .left, .right {
