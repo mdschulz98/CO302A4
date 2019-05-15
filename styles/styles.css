@@ -102,7 +102,7 @@ body, html {
 
   .text_block {
     height: auto;
-    ;text-align:center;
+    text-align:center;
     padding:50px 80px;
     text-align: justify;
   }
