@@ -68,7 +68,7 @@ function rightandleft() {
   });
 }
 
-function storechoice() {
+function storechoice(id) {
   var cookie = "sel=" + id.toString();
   document.cookie = cookie;
 }
