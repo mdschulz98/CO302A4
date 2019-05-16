@@ -114,7 +114,7 @@ function getsel(page) {
 }
 
 function determineText(page) {
-  var no_sup = "Cookies not supported";
+  var no_sup = "Cookies not supported, this story relies on them.";
   var sel;
   var name = "sel=";
     var decodedCookie = decodeURIComponent(document.cookie);
