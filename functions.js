@@ -131,18 +131,18 @@ function determineText(page) {
   switch(page) {
     case 1: 
       if(parseInt(sel) === 37){
-        return "Nice! That email is absolutely fake.";
+        return "Darn! Turns out that email is fake, let's look at why.";
       }
       else if(parseInt(sel) === 39) {
-        return "Darn! Turns out that email is fake, let's look at why.";
+        return "Nice! That email is absolutely fake.";
       }
       break;
     case 2:
       if(parseInt(sel) === 37) {
-        return "Correct! This webpage is a complete forgery.";
+        return "Not quite. But it looks so real, right?";
       }
       else if(parseInt(sel) === 39){
-        return "Not quite. But it looks so real, right?";
+        return "Correct! This webpage is a complete forgery.";
       }
       break;
     case 3:
