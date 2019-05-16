@@ -46,7 +46,7 @@
 
   .center_block {
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     font-family: "Arial Black", Gadget, sans-serif;
     position: absolute;
     left: 50%;
@@ -54,6 +54,11 @@
     transform: translate(-50%, -50%);
     background-color: rgba(141,185,237,0.8);
     color: #212833;
+    padding: 10px;
+  }
+
+  .small_text {
+    font-size: 14px;
   }
 
   .rightleft_button, .continue_button {
@@ -92,9 +97,11 @@
   }
 
   .explain_block {
+    line-height: 1.5em;
     background-color: rgba(141,185,237, 0.8);
-    font-size: 16px;
+    font-size: 14px;
     width: 20%;
+    padding: 10px;
   }
 
   .lhs {
@@ -165,6 +172,11 @@
     width: 331px;
     float: left;
     border-radius: 50%;
+  }
+
+  .intext, .intext:visited {
+    color: #212833;
+    text-decoration: underline;
   }
 
   a, a:visited {

@@ -12,28 +12,34 @@
     </head>
 <body>
   <div class="netsec_bg">
-      <header class="story_help">
-          From now on, you can use your left and right arrow keys to make choices. (There are no more fake links)
-        </header>
         <div class="row">
-          <div class="rightleft_block lhs">
-            <a href="./story2after.html" onclick="storechoice(this.id)" id="37">
-              <button class="rightleft_button">Real!</button>
-              </a>
-          </div>
+                <div class="explain_block lhs">
+                        <p id="user_choice"></p>
+                        <p>
+                            It is a terrible idea to connect to "Free Public WiFi". The lack
+                            of a password means <em>anyone</em> on the network can view
+                            your internet traffic. Even worse, a hacker could be
+                            running the network and have a program logging your traffic
+                            and viewing various login information sent over the network.
+                            Worse still, the hacker could set up the network to infect all
+                            of the devices that connect to it with malware! Be very, very
+                            wary of free wifi in general, and if you have to connect to it,
+                            use a <a class="intext" href="https://nordvpn.com/offer/what-is-a-vpn/?gclid=CjwKCAjw8e7mBRBsEiwAPVxxiDKL4TjHipEXgpCVbLAaTZAspYCk9Ifay5hJDsHYEyUc9HJMRlQQ6xoCFrYQAvD_BwE&utm_expid=.eTlPS3a_Q5aXZUotj8rh3A.0&utm_referrer=https%3A%2F%2Fwww.google.com%2F">VPN</a>. 
+                        </p>
+                    </div>
                 
                 <div class="center_block">
-                  <h2 class="story_head">Is This Bank Webpage Real or Fake?</h2>
+                  <h2 class="story_head">Don't Use Free Unsecure Wifi!</h2>
                   <span class="opa">
-                  <img src="./assets/bankscam.jpg" class="phish_img longer_fade">
+                  <img style="height:350px" src="./assets/free wifi bad.jpg" class="phish_img longer_fade">
                   </span>
                 </div>
 
                 <div class="rightleft_block rhs">
-                  <a href="./story2after.html" onclick="storechoice(this.id)" id="39">
-                    <button class="rightleft_button">Fake!</button>
-                    </a>
-                </div>
+                        <a href="./story5.html" id="39"> 
+                          <button  class="continue_button">Continue &rArr;</button>
+                        </a>
+                    </div>
                 
               </div>
               
@@ -54,6 +60,6 @@
                                 </span>
                             </section>
                     </footer>
-                    <script>rightandleft();</script>
+                    <script>rightandleft();getsel(4);</script>
 </body>
 </html>

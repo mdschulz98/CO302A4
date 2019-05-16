@@ -12,28 +12,32 @@
     </head>
 <body>
   <div class="netsec_bg">
-      <header class="story_help">
-          From now on, you can use your left and right arrow keys to make choices. (There are no more fake links)
-        </header>
         <div class="row">
-          <div class="rightleft_block lhs">
-            <a href="./story2after.html" onclick="storechoice(this.id)" id="37">
-              <button class="rightleft_button">Real!</button>
-              </a>
-          </div>
+                <div class="explain_block lhs">
+                        <p id="user_choice"></p>
+                        <p>
+                            No matter how real a webpage may look, one dead giveaway that it's fake is its URL. 
+                            Shown at the top of most browsers, the URL basically identifies where you are on 
+                            the internet. If it does not match where you thought you were - be extremely
+                            careful, leave the page, and report the site if you can. In our example, the URL
+                            should involve "Bank Of America" or "BoA", etc, but shows "sclgchl1.eu.pn/index3.html"
+                            instead. Tips for noticing fake URL's are similar to detecting fake emails and links: 
+                            mismatched domain names, numbers instead of letters, and random strings of letters. 
+                        </p>
+                    </div>
                 
                 <div class="center_block">
-                  <h2 class="story_head">Is This Bank Webpage Real or Fake?</h2>
+                  <h2 class="story_head">The Webpage Is Fake!</h2>
                   <span class="opa">
-                  <img src="./assets/bankscam.jpg" class="phish_img longer_fade">
+                  <img src="./assets/bankscam_edit.jpg" class="phish_img longer_fade">
                   </span>
                 </div>
 
                 <div class="rightleft_block rhs">
-                  <a href="./story2after.html" onclick="storechoice(this.id)" id="39">
-                    <button class="rightleft_button">Fake!</button>
-                    </a>
-                </div>
+                        <a href="./story3.html" id="39"> 
+                          <button class="continue_button">Continue &rArr;</button>
+                        </a>
+                    </div>
                 
               </div>
               
@@ -54,6 +58,6 @@
                                 </span>
                             </section>
                     </footer>
-                    <script>rightandleft();</script>
+                    <script>rightandleft();getsel(2);</script>
 </body>
 </html>

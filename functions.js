@@ -114,6 +114,7 @@ function getsel(page) {
 }
 
 function determineText(page) {
+  var no_sup = "Cookies not supported";
   var sel;
   var name = "sel=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -132,9 +133,42 @@ function determineText(page) {
       if(parseInt(sel) === 37){
         return "Nice! That email is absolutely fake.";
       }
-      else {
+      else if(parseInt(sel) === 39) {
         return "Darn! Turns out that email is fake, let's look at why.";
       }
+      break;
+    case 2:
+      if(parseInt(sel) === 37) {
+        return "Correct! This webpage is a complete forgery.";
+      }
+      else if(parseInt(sel) === 39){
+        return "Not quite. But it looks so real, right?";
+      }
+      break;
+    case 3:
+      if(parseInt(sel) === 37) {
+       return "Good! That's a very important step in home security many people miss.";
+      }
+      else if(parseInt(sel) === 39){
+        return "Hmm, I would rethink that answer.";
+      }
+      case 4:
+      if(parseInt(sel) === 37) {
+       return "That is not a very safe choice.";
+      }
+      else if(parseInt(sel) === 39){
+        return "Smart! Stay away from wifi you don't know the source of.";
+      }
+      case 5:
+      if(parseInt(sel) === 37) {
+       return "I don't recommend that!";
+      }
+      else if(parseInt(sel) === 39){
+        return "Correct! These sites are very fake.";
+      }
+      default: break;
+
   }
+  return no_sup;
 }
 

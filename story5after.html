@@ -12,28 +12,33 @@
     </head>
 <body>
   <div class="netsec_bg">
-      <header class="story_help">
-          From now on, you can use your left and right arrow keys to make choices. (There are no more fake links)
-        </header>
         <div class="row">
-          <div class="rightleft_block lhs">
-            <a href="./story2after.html" onclick="storechoice(this.id)" id="37">
-              <button class="rightleft_button">Real!</button>
-              </a>
-          </div>
+                <div class="explain_block lhs">
+                        <p id="user_choice"></p>
+                        <p>
+                            This one is fairly apparent, but raises several
+                            important points for identifying fake links and websites.
+                            First, it helps to just Google the brand names and see
+                            that their websites don't match the ones listed. In addition,
+                            the sales seem <em>way</em> too good to be true, and in the
+                            case of the internet, most thing that seem that way are.
+                            Lastly, the image just looks unprofessional, a tell-tale sign
+                            that the sites are fake and likely dangerous.
+                        </p>
+                    </div>
                 
                 <div class="center_block">
-                  <h2 class="story_head">Is This Bank Webpage Real or Fake?</h2>
+                  <h2 class="story_head">Stay Away From These Sites!</h2>
                   <span class="opa">
-                  <img src="./assets/bankscam.jpg" class="phish_img longer_fade">
+                  <img style="height:350px" src="./assets/fbscam.jpg" class="phish_img longer_fade">
                   </span>
                 </div>
 
                 <div class="rightleft_block rhs">
-                  <a href="./story2after.html" onclick="storechoice(this.id)" id="39">
-                    <button class="rightleft_button">Fake!</button>
-                    </a>
-                </div>
+                        <a href="./reflect.html" id="39"> 
+                          <button  class="continue_button">Finish</button>
+                        </a>
+                    </div>
                 
               </div>
               
@@ -54,6 +59,6 @@
                                 </span>
                             </section>
                     </footer>
-                    <script>rightandleft();</script>
+                    <script>rightandleft();getsel(5);</script>
 </body>
 </html>

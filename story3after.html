@@ -12,28 +12,35 @@
     </head>
 <body>
   <div class="netsec_bg">
-      <header class="story_help">
-          From now on, you can use your left and right arrow keys to make choices. (There are no more fake links)
-        </header>
         <div class="row">
-          <div class="rightleft_block lhs">
-            <a href="./story2after.html" onclick="storechoice(this.id)" id="37">
-              <button class="rightleft_button">Real!</button>
-              </a>
-          </div>
+                <div class="explain_block lhs">
+                        <p id="user_choice"></p>
+                        <p>
+                            It turns out hackers can exploit these default passwords to
+                            gain free access to your router and therefore all of your 
+                            internet traffic! It is very much worth changing these default
+                            credentials to something more secure. Bad ideas for passwords
+                            include personal information, favorite sports teams, and anything
+                            someone could learn about you on Facebook. Strong passwords usually
+                            contain some mixed-case letters, symbols, and are 10+ characters in length.
+                            Another strategy is to use 4 unrelated words that you can remember
+                            using a mnemonic sentence, as this is actually very secure.
+                            <strong>Never</strong> use the password "password" or "12345678" etc.
+                        </p>
+                    </div>
                 
                 <div class="center_block">
-                  <h2 class="story_head">Is This Bank Webpage Real or Fake?</h2>
+                  <h2 class="story_head">You Absolutely Should!</h2>
                   <span class="opa">
-                  <img src="./assets/bankscam.jpg" class="phish_img longer_fade">
+                  <img src="./assets/router.jpg" class="phish_img longer_fade">
                   </span>
                 </div>
 
                 <div class="rightleft_block rhs">
-                  <a href="./story2after.html" onclick="storechoice(this.id)" id="39">
-                    <button class="rightleft_button">Fake!</button>
-                    </a>
-                </div>
+                        <a href="./story4.html" id="39"> 
+                          <button  class="continue_button">Continue &rArr;</button>
+                        </a>
+                    </div>
                 
               </div>
               
@@ -54,6 +61,6 @@
                                 </span>
                             </section>
                     </footer>
-                    <script>rightandleft();</script>
+                    <script>rightandleft();getsel(3);</script>
 </body>
 </html>
