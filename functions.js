@@ -59,11 +59,11 @@ function rightandleft() {
   document.addEventListener("keyup", function(e) {
     if(e.keyCode === 37) {
       storechoice(e.keyCode);
-      document.getElementById("real").click();
+      document.getElementById("37").click();
     }
     else if (e.keyCode === 39) {
       storechoice(e.keyCode);
-      document.getElementById("fake").click();
+      document.getElementById("39").click();
     }
   });
 }
@@ -74,7 +74,6 @@ function storechoice(id) {
 }
 
 function driveby() {
-   alert("driveby");
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent('This could have been so much worse!'));
     element.setAttribute('download', randomFilename());
@@ -102,4 +101,9 @@ function randomLetter() {
   else {
     return Math.floor((Math.random() * 26)) + 65;
   }
+}
+
+function fixlink() {
+  var link = document.getElementById("37");
+  link.setAttribute('href', './story3.html');
 }
