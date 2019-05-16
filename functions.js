@@ -34,15 +34,6 @@ function getChoice() {
     }
   }
 
-  function choiceToText(choice) {
-    switch(parseInt(choice)) {
-      case 1: return "You picked Jonathan Decker, a wonderful choice!";
-      case 2: return "Why on earth would you pick Timothy? One course on blockchain a security master does not make.";
-      case 3: return "You picked Frank Stowalstalk, hoping that years of experience really make the difference.";
-      default: return "I have no idea what you picked.";
-    }
-  }
-
   function prependById(elementId, textToPrepend) {
     document.getElementById(elementId).innerHTML = textToPrepend + " " + document.getElementById(elementId).innerHTML;
   }
