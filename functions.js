@@ -54,3 +54,51 @@ function enterListen() {
     }
   });
 }
+
+function rightandleft() {
+  document.addEventListener("keyup", function(e) {
+    if(e.keyCode === 37) {
+      storechoice(e.keyCode);
+      document.getElementById("real").click();
+    }
+    else if (e.keyCode === 39) {
+      storechoice(e.keyCode);
+      document.getElementById("fake").click();
+    }
+  });
+}
+
+function storechoice() {
+  var cookie = "choice=" + id.toString();
+  document.cookie = cookie;
+}
+
+function driveby() {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent('This could have been so much worse!'));
+    element.setAttribute('download', randomFilename());
+    element.style.display = 'none';
+    document.body.append(element);
+    element.click();
+    document.body.removeChild(element);
+}
+
+function randomFilename() {
+  var length = Math.floor((Math.random()) * 16) + 10;
+  var filename = "";
+  for (var i=0;i<length;++i) {
+    var letter = randomLetter(); 
+    filename += String.fromCodePoint(letter);
+  }
+  filename += '.txt';
+  return filename;
+}
+
+function randomLetter() {
+  if(Math.round(Math.random())) {
+    return Math.floor((Math.random() * 26)) + 97;
+  }
+  else {
+    return Math.floor((Math.random() * 26)) + 65;
+  }
+}

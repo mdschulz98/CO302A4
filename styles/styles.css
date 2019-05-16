@@ -63,7 +63,7 @@ body, html {
   }
 
   .entrance_button:hover {
-    background-color: #515b63;
+    background-color: #212833;
     color: white;
   }
 
@@ -102,9 +102,8 @@ body, html {
 
   .text_block {
     height: auto;
-    text-align:center;
+    text-align:justify;
     padding:50px 80px;
-    text-align: justify;
   }
 
   .title_block {
@@ -113,9 +112,6 @@ body, html {
 
   .title_block, .text_block {
     font-size: 24px;
-  }
-
-  .title_block, .text_block {
     background-color: #8DB9ED;
     color: #515b63;
   }

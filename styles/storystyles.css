@@ -7,6 +7,19 @@
     margin: 0;
   }
 
+.story_help {
+  text-align: center;
+  background-color: rgba(141,185,237,0.8);
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
+  color: #212833;
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 1%;
+  padding: 10px;
+}
+
   span.story p {
     color:#8DB9ED;
     margin-bottom:50px;
@@ -21,7 +34,7 @@
 
   .story_head {
     font-family: "Arial Black", Gadget, sans-serif;
-    color: #2c3438;
+    color: #212833;
   }
 
   /* Create two equal columns that floats next to each other */
@@ -31,25 +44,91 @@
     padding: 10px;
   }
 
+  .center_block {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(141,185,237,0.8);
+    color: #212833;
+  }
+
+  .realfake_button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    background-color: white;
+    margin: 4px 2px;
+    padding: 30px;
+    border: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #212833;
+  }
+
+  .realfake_button:hover {
+    background-color: #515b63;
+    color: white;
+  }
+
+  .realfake_block {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #212833;
+  }
+
+  .real {
+    left: 12%;
+  }
+
+  .fake {
+    left: 88%;
+  }
+
+  .opa {
+    opacity: 1;
+  }
+
+  .phish_img {
+    max-width: 80%;
+    height: auto;
+  }
+
   .netsec_bg {
     background-image: url('../assets/netsec1.png');
-    height: 100%; 
-    opacity: 0.75;
+    height: 91%; 
+    opacity: 0.75
   }
 
   .column {
-    float: left;
     padding: 10px;
+    background-color:rgba(0,0,0,0);    
+    text-align: center;
   }
 
-  .left, .right {
-    width: 25%;
-    background-color:#507caf;
+  .left {
+    float: left;
+    width: 33.33%;
+  }
+
+  .right {
+    float: right;
+    width: 33.33%;
   }
 
   .middle {
-    width: 50%;
-    background-color:#8DB9ED;
+    width: 33.33%;
   }
 
   .column_1, .column_2 {

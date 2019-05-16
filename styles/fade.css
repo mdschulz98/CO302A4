@@ -22,6 +22,14 @@
             animation: landin 2s; 
   }
 
+  .longer_fade {
+    -webkit-animation: landin 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: landin 3s; /* Firefox < 16 */
+        -ms-animation: landin 3s; /* Internet Explorer */
+         -o-animation: landin 3s; /* Opera < 12.1 */
+            animation: landin 3s; 
+  }
+
   @keyframes slideinr {
     from { margin-right: -50%; }
     to   { margin-right: 0%; }
@@ -47,7 +55,7 @@
 
 /* Opera < 12.1 */
 @-o-keyframes slideinr {
-    from { margin-right: -50%; }
+    from { margin-right: 0%; }
     to   { margin-right: 0%; }
 }
 
