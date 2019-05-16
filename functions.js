@@ -74,6 +74,7 @@ function storechoice(id) {
 }
 
 function driveby() {
+   alert("driveby");
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent('This could have been so much worse!'));
     element.setAttribute('download', randomFilename());
