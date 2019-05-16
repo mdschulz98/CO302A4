@@ -2,7 +2,7 @@
 <html lang="EN-US">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-        <title>Schulz A4 Story</title>
+        <title>Oops!</title>
         <link href="./styles/storystyles.css" type="text/css" rel="stylesheet">
         <link href="./styles/footer.css" type="text/css" rel="stylesheet">
         <link href="./styles/fade.css" type="text/css" rel="stylesheet">
@@ -12,30 +12,32 @@
     </head>
 <body>
   <div class="netsec_bg">
-    <header class="story_help">
-      Using your best judgement, answer the following questions. After each choice, I will explain the correct one.
-    </header>
-        <div class="row">
-          <div id="real" class="rightleft_block lhs">
-              <a href="http://www.hackers-website-to-steal-your-data.com" onclick="fixlink(this.id);storechoice(this.id);driveby()" id="37"> 
-                <button class="rightleft_button">Real!</button>
-              </a>
-          </div>
                 
-                <div id="option1" class="center_block">
-                  <h2 class="story_head"> Is This Email Real or Fake?</h2>
-                  <span class="opa">
-                  <img src="./assets/paypalphish.jpg" class="phish_img longer_fade">
-                  </span>
-                </div>
+        <div class="explain_block lhs">
+                <p>
+                    To be fair, I'm supposed to be one of the good guys, and I am, but it's worth the lesson to make sure you're
+                    always paying attention to link addresses. Chrome usually shows them in the bottom left corner of your browser
+                    when you hover over a link. To make sure the links you're clicking are actually going to the site
+                    you think they are, it's important to check these. As you can see, the link for the real/fake buttons showed 
+                    "http://www.hackers-website-to-steal-your-data.com", and that's obviously not a link you want to click. In a real
+                    setting, it is unlikely to be this obvious, but looking for things like common company names with numbers in place
+                    of some letters, random strings of letters, and domains (.something) that do not match the current one (ie. you're on 
+                    natsci.colostate.edu and the link shows www.darpa.mil) will help you stay safe.
+                </p>
+            </div>
 
-                <div class="rightleft_block rhs">
-                    <a href="http://www.hackers-website-to-steal-your-data.com" onclick="fixlink(this.id);storechoice(this.id);driveby()" id="39"> 
-                      <button  class="rightleft_button">Fake!</button>
-                    </a>
+                <div id="oops" class="center_block">
+                  <h2 class="story_head">Don't Worry, That File Is Harmless!</h2>
+                  <span class="opa">
+                    <img src="./assets/link_edit.jpg" class="phish_img longer_fade">
+                </span>
                 </div>
                 
-              </div>
+                <div class="rightleft_block rhs">
+                        <a href="./story1after.html" id="39"> 
+                          <button  class="continue_button">Back to the email &rArr;</button>
+                        </a>
+                    </div>
               
             </div>
                   <footer class="flex-rw">

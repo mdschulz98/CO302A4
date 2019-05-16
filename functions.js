@@ -75,7 +75,7 @@ function storechoice(id) {
 
 function driveby() {
     var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent('This could have been so much worse!'));
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent('Luckily, this is just a harmless text file.'));
     element.setAttribute('download', randomFilename());
     element.style.display = 'none';
     document.body.append(element);
@@ -103,7 +103,38 @@ function randomLetter() {
   }
 }
 
-function fixlink() {
-  var link = document.getElementById("37");
-  link.setAttribute('href', './story3.html');
+function fixlink(id) {
+  var link = document.getElementById(id);
+  link.setAttribute('href', './oops.html');
 }
+
+function getsel(page) {
+    var element = document.getElementById("user_choice");
+    element.innerHTML = determineText(page);
+}
+
+function determineText(page) {
+  var sel;
+  var name = "sel=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        sel=c.substring(name.length, c.length);
+      }
+    }
+  switch(page) {
+    case 1: 
+      if(parseInt(sel) === 37){
+        return "Nice! That email is absolutely fake.";
+      }
+      else {
+        return "Darn! Turns out that email is fake, let's look at why.";
+      }
+  }
+}
+
