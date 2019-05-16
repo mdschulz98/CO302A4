@@ -69,7 +69,7 @@ function rightandleft() {
 }
 
 function storechoice() {
-  var cookie = "choice=" + id.toString();
+  var cookie = "sel=" + id.toString();
   document.cookie = cookie;
 }
 
