@@ -117,6 +117,10 @@ body, html {
     color: #212833;
   }
 
+  .text_block p a {
+    text-decoration: underline;
+  }
+
   .text_block {
     font-size: 20px;
   }
