@@ -112,9 +112,9 @@ body, html {
     font-size: 24px;
   }
 
-  .title_block, .text_block {
+  .title_block, .text_block, .text_block p a, .text_block p a:visited {
     background-color: #8DB9ED;
-    color: #515b63;
+    color: #212833;
   }
 
   .text_block {
