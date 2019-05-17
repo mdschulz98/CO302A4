@@ -109,12 +109,16 @@ body, html {
 
   .title_block {
     text-align: center;
+    font-size: 24px;
   }
 
   .title_block, .text_block {
-    font-size: 24px;
     background-color: #8DB9ED;
     color: #515b63;
+  }
+
+  .text_block {
+    font-size: 20px;
   }
 
   .center_block, .center_block p a, .center_block p a:visited {
