@@ -121,6 +121,10 @@ body, html {
     text-decoration: underline;
   }
 
+  li, li a, li a:visited{
+    color: #212833;
+  }
+
   .text_block {
     font-size: 20px;
   }
